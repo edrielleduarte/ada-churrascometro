@@ -75,7 +75,7 @@ export const BodyPage = () => {
             subTitlePs="Quantas pessoas vão participar?"
           />
           <div className="container-fluid ">
-            <Cards id="homen" title="Homens" onChageValue={setHomem} />
+            <Cards id="homem" title="Homens" onChageValue={setHomem} />
             <Cards id="mulheres" title="Mulheres" onChageValue={setMulher} />
             <Cards id="crianças" title="Crianças" onChageValue={setCrianca} />
           </div>

@@ -1,14 +1,17 @@
-export const DadosFormulario = ({ typeInput, placeholderInput, onChange }) => {
-  return (
-    <input
-      type={typeInput}
-      id="name"
-      placeholder={placeholderInput}
-      className="input-form"
-      required
-      onChange={onChange}
-    />
-  );
-};
+import { Component } from 'react';
+
+class DadosFormulario extends Component {
+  render() {
+    return (
+      <input
+        type={this.props.typeInput}
+        placeholder={this.props.placeholderInput}
+        className="input-form"
+        required
+        onChange={this.props.onChange}
+      />
+    );
+  }
+}
 
 export default DadosFormulario;
