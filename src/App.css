@@ -10,6 +10,7 @@
   --title-page: #efa360;
   --bg-page: #3f373c;
   --text-color: white;
+  --background-color: #1f2023;
 }
 
 .light-theme {
@@ -33,6 +34,12 @@ h1 {
   margin: 60px 0;
 }
 
+.dark {
+  background-color: black;
+  height: 100vh;
+  text-align: center;
+  overflow-x: hidden;
+}
 
 h3 {
   color: var(--text-color);
@@ -61,16 +68,16 @@ caption {
 .container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
   border-radius: 10px;
   text-align: center;
 }
+
 .row {
   width: 100%;
 }
 
 .style-h3 {
-  font-weight:bolder
+  font-weight: bolder;
 }
 .row-first {
   display: grid;
@@ -173,7 +180,7 @@ input::-webkit-inner-spin-button {
   margin: 30px 0 10px;
   border-radius: 10px;
   width: 150px;
-  height: 26px;
+  height: 49px;
   padding: 10px 15px;
   background-color: var(--default-button);
   color: #181c23;
@@ -184,8 +191,24 @@ input::-webkit-inner-spin-button {
   display: inline-block;
 }
 
+.button-retorno {
+  border: none;
+  margin: 30px 0 10px;
+  border-radius: 10px;
+  width: 150px;
+  height: 49px;
+  padding: 10px 15px;
+  background-color: var(--default-button);
+  color: #181c23;
+  font-size: 18px;
+
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
 .input-form {
-  color: #8b6b52;
+  color: #ffffff;
   width: 300px;
   text-align: center;
   height: 50px;
@@ -388,10 +411,11 @@ input:checked + .slider:before {
 }
 
 .container-fluid {
-  display:grid;
-  grid-template-areas: "h h h"
-                       "a m m"
-                       "f f f"
+  display: grid;
+  grid-template-areas:
+    'h h h'
+    'a m m'
+    'f f f';
 }
 
 .results li strong {
@@ -399,6 +423,9 @@ input:checked + .slider:before {
   left: 0;
 }
 
+.title-mensagem {
+  color: #ffffff;
+}
 .results li span {
   position: absolute;
   right: 0;
@@ -415,4 +442,28 @@ input:checked + .slider:before {
 #header-result p {
   font-weight: 900;
   font-size: larger;
+}
+
+.default-cadastro {
+  padding: 12px 20px;
+  background-color: var(--default-button);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.default-cadastro:hover {
+  opacity: 0.8;
+  background: #db9e69;
+}
+
+.default-button
+:hover {
+  opacity: 0.8;
+  background: #db9e69;
+}
+
+.button-retorno:hover {
+  opacity: 0.8;
+  background: #db9e69;
 }

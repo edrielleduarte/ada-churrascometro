@@ -1,12 +1,19 @@
 import './App.css';
+import React from 'react';
 import { BodyPage } from './componentes/BodyPage';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Resultado from './componentes/Resultado';
+import Cadastro from './componentes/Cadastro';
 
-// import TesteHeadler from './componentes/TesteHeadler';
 function App() {
   return (
-    <div className="todo-app">
-      <BodyPage />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<BodyPage />} />
+        <Route path="/resultado" element={<Resultado />} />
+        <Route path="/cadastro" element={<Cadastro />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
